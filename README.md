@@ -1,78 +1,133 @@
-# MERN Stack Integration Assignment
+# MERN Stack Blogging Application
 
-This assignment focuses on building a full-stack MERN (MongoDB, Express.js, React.js, Node.js) application that demonstrates seamless integration between front-end and back-end components.
+This is a full-stack blogging application built using the MERN stack (MongoDB, Express.js, React, Node.js). The project serves as a foundation for building rich, interactive, and scalable blog platforms.
 
-## Assignment Overview
+## Table of Contents
 
-You will build a blog application with the following features:
-1. RESTful API with Express.js and MongoDB
-2. React front-end with component architecture
-3. Full CRUD functionality for blog posts
-4. User authentication and authorization
-5. Advanced features like image uploads and comments
+- [Features](#features)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Environment Variables](#environment-variables)
+- [Scripts](#scripts)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- User authentication and authorization
+- Create, read, update, and delete (CRUD) blog posts
+- RESTful API backend
+- Responsive React frontend
+- Clean, modular codebase
 
 ## Project Structure
 
 ```
-mern-blog/
-├── client/                 # React front-end
-│   ├── public/             # Static files
-│   ├── src/                # React source code
-│   │   ├── components/     # Reusable components
-│   │   ├── pages/          # Page components
-│   │   ├── hooks/          # Custom React hooks
-│   │   ├── services/       # API services
-│   │   ├── context/        # React context providers
-│   │   └── App.jsx         # Main application component
-│   └── package.json        # Client dependencies
-├── server/                 # Express.js back-end
-│   ├── config/             # Configuration files
-│   ├── controllers/        # Route controllers
-│   ├── models/             # Mongoose models
-│   ├── routes/             # API routes
-│   ├── middleware/         # Custom middleware
-│   ├── utils/              # Utility functions
-│   ├── server.js           # Main server file
-│   └── package.json        # Server dependencies
-└── README.md               # Project documentation
+.
+├── client/       # React frontend
+│   ├── public/
+│   ├── src/
+│   ├── .env
+│   ├── package.json
+│   ├── vite.config.js
+│   └── ...
+├── server/       # Node.js/Express backend
+│   ├── models/
+│   ├── routes/
+│   ├── server.js
+│   ├── .env
+│   ├── package.json
+│   └── ...
+├── README.md
+└── Week4-Assignment.md
 ```
 
 ## Getting Started
 
-1. Accept the GitHub Classroom assignment invitation
-2. Clone your personal repository that was created by GitHub Classroom
-3. Follow the setup instructions in the `Week4-Assignment.md` file
-4. Complete the tasks outlined in the assignment
+### Prerequisites
 
-## Files Included
+- Node.js (v14+)
+- npm or Yarn
+- MongoDB (local or cloud instance)
 
-- `Week4-Assignment.md`: Detailed assignment instructions
-- Starter code for both client and server:
-  - Basic project structure
-  - Configuration files
-  - Sample models and components
+### Installation
 
-## Requirements
+1. **Clone the repository:**
+    ```bash
+    git clone https://github.com/PLP-MERN-Stack-Development/mern-stack-integration-Olaweb24.git
+    cd mern-stack-integration-Olaweb24
+    ```
 
-- Node.js (v18 or higher)
-- MongoDB (local installation or Atlas account)
-- npm or yarn
-- Git
+2. **Install server dependencies:**
+    ```bash
+    cd server
+    npm install
+    ```
 
-## Submission
+3. **Install client dependencies:**
+    ```bash
+    cd ../client
+    npm install
+    ```
 
-Your work will be automatically submitted when you push to your GitHub Classroom repository. Make sure to:
+### Running the Application
 
-1. Complete both the client and server portions of the application
-2. Implement all required API endpoints
-3. Create the necessary React components and hooks
-4. Document your API and setup process in the README.md
-5. Include screenshots of your working application
+1. **Start the backend server:**
+    ```bash
+    cd server
+    npm start
+    ```
+    The server runs by default on port 5000.
 
-## Resources
+2. **Start the frontend development server:**
+    ```bash
+    cd ../client
+    npm run dev
+    ```
+    The client runs by default on port 3000 (configured via Vite).
 
-- [MongoDB Documentation](https://docs.mongodb.com/)
-- [Express.js Documentation](https://expressjs.com/)
-- [React Documentation](https://react.dev/)
-- [Node.js Documentation](https://nodejs.org/en/docs/)
-- [Mongoose Documentation](https://mongoosejs.com/docs/) 
+3. **Visit** `http://localhost:3000` in your browser.
+
+## Environment Variables
+
+Copy the `.env.example` files in both `client/` and `server/` directories (if available) to `.env` and update the values as needed.
+
+**Server `.env` example:**
+```
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+PORT=5000
+```
+
+**Client `.env` example:**
+```
+VITE_API_URL=http://localhost:5000
+```
+
+## Scripts
+
+- **Server:**  
+    - `npm start` – Start the Express server
+    - `npm run dev` – Start server with auto-reload (if using nodemon)
+- **Client:**  
+    - `npm run dev` – Start the React development server (Vite)
+    - `npm run build` – Build the production-ready app
+
+## Contributing
+
+Contributions are welcome! Please fork this repository and submit a pull request for any enhancements or bug fixes.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+**Contact:**  
+For questions or feedback, please open an issue or contact the maintainer.
