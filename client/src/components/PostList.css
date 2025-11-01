@@ -1,0 +1,40 @@
+/* PostList.css */
+
+.post-list {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.post-list h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.post-item {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.post-item:hover {
+  transform: translateY(-3px);
+}
+
+.post-item h3 {
+  margin: 0 0 0.5rem 0;
+  color: #0070f3;
+}
+
+.post-item p {
+  color: #555;
+  line-height: 1.5;
+}
+
+

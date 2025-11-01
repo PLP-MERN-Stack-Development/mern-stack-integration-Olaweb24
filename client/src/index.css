@@ -1,0 +1,49 @@
+/* Post list container */
+.post-list-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Each post item */
+.post-item {
+  background-color: #fff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.post-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Post title */
+.post-title {
+  margin: 0 0 0.5rem 0;
+  color: #333;
+  font-size: 1.5rem;
+}
+
+/* Post content snippet */
+.post-content {
+  margin: 0.5rem 0;
+  color: #555;
+}
+
+/* Edit link */
+.edit-link {
+  background-color: green;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.edit-link:hover {
+  text-decoration: underline;
+}
